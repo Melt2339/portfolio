@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>고경영 — Gameplay Programmer Portfolio</title>
+  <meta name="description" content="고경영 (Gameplay Programmer) — Multiplayer, AI, VR, C++/C# 프로젝트 포트폴리오" />
+  <style>
+    :root{
+      --bg:#071129; --card:#081421; --muted:#94a3b8; --accent:#ff6b6b;
+      --glass: rgba(255,255,255,0.03); --maxw:1100px;
+      font-family: "Noto Sans KR", Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:linear-gradient(180deg,#041022 0%, #021018 100%); color:#e6eef8; -webkit-font-smoothing:antialiased;}
+    .wrap{max-width:var(--maxw); margin:28px auto; padding:28px;}
+    header{display:flex; gap:18px; align-items:center;}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,#0ea5a5,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .links{margin-left:auto;display:flex;gap:10px;align-items:center}
+    .btn{background:var(--glass);border:1px solid rgba(255,255,255,0.03);padding:8px 12px;border-radius:8px;color:var(--muted);font-size:13px;text-decoration:none}
+    .hero{display:flex;gap:24px;margin:28px 0;align-items:center}
+    .hero .text{max-width:640px}
+    .badges{display:flex;gap:8px;margin-top:12px}
+    .badge{background:#071826;padding:6px 8px;border-radius:8px;font-size:13px;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:12px;padding:12px;border:1px solid rgba(255,255,255,0.03);}
+    .thumb{width:100%;height:150px;border-radius:8px;background:#0a1220;display:flex;align-items:center;justify-content:center;color:var(--muted);overflow:hidden}
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+    .title{font-weight:700;font-size:15px}
+    .tech{font-size:12px;color:var(--muted)}
+    .desc{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.4}
+    footer{margin-top:28px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center}
+    .contact{display:flex;gap:10px;align-items:center}
+    @media (max-width:640px){
+      .hero{flex-direction:column;align-items:flex-start}
+      .thumb{height:130px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">고경</div>
+      <div>
+        <h1>고경영 — Gameplay Programmer</h1>
+        <p class="lead">C++ · C# · Multiplayer · AI · VR Interaction — 플레이어 경험 중심의 시스템 개발</p>
+        <div class="badges" aria-hidden>
+          <div class="badge">Unity</div>
+          <div class="badge">Photon</div>
+          <div class="badge">NavMesh / FSM</div>
+          <div class="badge">Win32 / C++</div>
+        </div>
+      </div>
+
+      <nav class="links">
+        <a class="btn" href="https://github.com/Melt2339" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="text">
+        <h2 style="margin:0 0 8px">Selected Projects</h2>
+        <p style="margin:0;color:var(--muted)">대표 프로젝트와 실무 수준의 데모를 중심으로 정리했습니다. 카드에서 상세 페이지나 레포로 이동하세요.</p>
+      </div>
+      <div style="margin-left:auto; min-width:220px">
+        <div style="background:var(--card); padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)">
+          <div style="font-weight:700">Contact</div>
+          <div style="color:var(--muted);margin-top:6px">ghddutl09@gmail.com</div>
+          <div style="color:var(--muted);margin-top:6px;font-size:13px">Seoul, KR · 1999</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid">
+        <!-- The Asylum -->
+        <article class="card">
+          <a href="projects/the-asylum.html" style="text-decoration:none;color:inherit">
+            <div class="thumb">
+              <img src="assets/visuals/asylum_thumb.jpg" alt="The Asylum thumbnail" />
+            </div>
+            <div class="meta">
+              <div class="title">The Asylum</div>
+              <div class="tech">Unity · Photon · C#</div>
+            </div>
+            <div class="desc">멀티플레이 공포 방탈출 — 몬스터 AI(FSM), 공포 연출, 멀티 동기화 담당</div>
+          </a>
+        </article>
+
+        <!-- Ice Climber -->
+        <article class="card">
+          <a href="projects/ice-climber.html" style="text-decoration:none;color:inherit">
+            <div class="thumb">
+              <img src="assets/visuals/ice_thumb.jpg" alt="Ice Climber" />
+            </div>
+            <div class="meta">
+              <div class="title">Ice Climber (Engine-free)</div>
+              <div class="tech">C++ · Win32</div>
+            </div>
+            <div class="desc">엔진 없이 C++로 구현한 2D 타일 게임 — 물리·충돌·FSM 직접 구현</div>
+          </a>
+        </article>
+
+        <!-- Digimon VR -->
+        <article class="card">
+          <a href="projects/digimon-vr.html" style="text-decoration:none;color:inherit">
+            <div class="thumb">
+              <img src="assets/visuals/digimon_thumb.jpg" alt="Digimon VR" />
+            </div>
+            <div class="meta">
+              <div class="title">Digimon VR</div>
+              <div class="tech">Unity · XR · C#</div>
+            </div>
+            <div class="desc">펫 성장형 VR — UI/UX, 타이틀, 사운드 매니저 설계</div>
+          </a>
+        </article>
+
+        <!-- Laboratory VR -->
+        <article class="card">
+          <a href="projects/laboratory.html" style="text-decoration:none;color:inherit">
+            <div class="thumb">
+              <img src="assets/visuals/lab_thumb.jpg" alt="Laboratory VR" />
+            </div>
+            <div class="meta">
+              <div class="title">Laboratory VR</div>
+              <div class="tech">Unity XR</div>
+            </div>
+            <div class="desc">안전 실험 VR 시뮬레이션 — 단계별 플로우 및 상호작용 설계</div>
+          </a>
+        </article>
+
+        <!-- Tetris -->
+        <article class="card">
+          <a href="projects/tetris.html" style="text-decoration:none;color:inherit">
+            <div class="thumb">
+              <img src="assets/visuals/tetris_thumb.jpg" alt="Tetris" />
+            </div>
+            <div class="meta">
+              <div class="title">Tetris (Win32)</div>
+              <div class="tech">C++ · Win32 GDI</div>
+            </div>
+            <div class="desc">Win32 API로 구현한 테트리스 — 회전/충돌/라인 삭제/홀드 구현</div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div>© 고경영 — Gameplay Programmer</div>
+      <div class="contact">
+        <a class="btn" href="mailto:ghddutl09@gmail.com">Email</a>
+        <a class="btn" href="https://github.com/Melt2339" target="_blank">GitHub</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
